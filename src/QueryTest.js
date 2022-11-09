@@ -1,6 +1,6 @@
 
 import React from 'react';
-import {linkFTB} from './TestFile.js'
+//import {linkFTB} from './TestFile.js'
 import {useNavigate} from "react-router-dom"
 
 const QueryTest = () => {
