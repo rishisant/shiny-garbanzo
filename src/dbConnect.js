@@ -1,7 +1,4 @@
 const {Client, Pool} = require('pg');
-//const dotenv = require('dotenv').config();
-
-// Connect to the database
 const pool = new Pool({
     user: "csce315_903_rehmat",
     host: "csce-315-db.engr.tamu.edu",
@@ -10,24 +7,21 @@ const pool = new Pool({
     port: process.env.PSQL_PORT,
     ssl: {rejectUnauthorized: false}
 });
-
-// Now connect to the database
 console.log('Connecting to database...')
 pool.connect();
-// Run a query
 pool.query('SELECT * FROM orders LIMIT 5')
-.then(res => console.log(res.rows))
+.then(res => console.log(res.rows[0]['total_price']))
 .finally(() => pool.end());
 
-const express = require('express')
-const app = express()
-const port = 3002
-app.get('/', (req, res) => {
-    res.status(200).send(res);
-})
-app.listen(port, () => {
-  console.log(`App running on port ${port}.`)
-})
+// const express = require('express')
+// const app = express()
+// const port = 3002
+// app.get('/', (req, res) => {
+//     res.status(200).send(res);
+// })
+// app.listen(port, () => {
+//   console.log(`App running on port ${port}.`)
+// })
 
 // const express = require('express')
 // const Pool = require('pg').Pool
