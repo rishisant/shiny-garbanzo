@@ -7,7 +7,7 @@ import React from 'react';
 import './BaseStyle.css';
 // import {raise_admin_bar} from './HomeFunctions';
 import {raise_admin_bar} from './HomeFunctions';
-
+import { print_All_Vals, products, ingredients, prices } from './Home';
 
 const InDevelopment = () => {
     const navigate = useNavigate();
@@ -15,6 +15,7 @@ const InDevelopment = () => {
     return (
         <div id="homecontainer">
             <img id="mainlogo" src={require('./components/img/hss_transparent.png')} alt="Logo"></img>
+            <div class="homebutton" id="admin_panel" onClick={print_All_Vals}>Print all vals Console</div>
             <div class="homebutton" id="admin_panel" onClick={raise_admin_bar}>Admin Panel</div>
             <div id="indevelopmentwaiver">
                 This feature is currently in development. Please check back later. In the meantime, you can use the admin panel to navigate to other pages.

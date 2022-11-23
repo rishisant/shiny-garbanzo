@@ -1,9 +1,9 @@
 const {Client, Pool} = require('pg');
 const pool = new Pool({
-    user: "csce315_903_rehmat",
-    host: "csce-315-db.engr.tamu.edu",
-    database: "csce315_903_13",
-    password: "528000730",
+    user: process.env.PSQL_USER,
+    host: process.env.PSQL_HOST,
+    database: process.env.PSQL_DATABASE,
+    password: process.env.PSQL_PASSWORD,
     port: process.env.PSQL_PORT,
     ssl: {rejectUnauthorized: false}
 });
@@ -23,18 +23,18 @@ pool.query('SELECT * FROM orders LIMIT 5')
 //   console.log(`App running on port ${port}.`)
 // })
 
-// const express = require('express')
-// const Pool = require('pg').Pool
-// const app = express()
-// const port = 3001
+const express = require('express')
+const Pool = require('pg').Pool
+const app = express()
+const port = 3001
 
-// app.get('/', (req, res) => {
-//   res.status(200).send('Hello World!');
-// })
+app.get('/', (req, res) => {
+  res.status(200).send('Hello World!');
+})
 
-// app.listen(port, () => {
-//   console.log(`App running on port ${port}.`)
-// })
+app.listen(port, () => {
+  console.log(`App running on port ${port}.`)
+})
 
 
 

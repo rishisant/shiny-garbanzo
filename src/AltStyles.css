@@ -1,0 +1,258 @@
+/* AltStyles.css */
+/* @author: @rishisant */
+/* @desc: Holds all the styling for alternate webpages such as QueryTest. */
+
+/* All Font Imports */
+@import url('https://fonts.googleapis.com/css?family=Roboto+Slab&display=swap'); /* Roboto Slab */
+
+/* Background Image */
+body {
+    background-image: url("./components/img/subway_photo.png");
+    background-size: cover;
+    /* background-size: contain; */
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+}
+/* Basic Styles */
+.icon {
+    width: 50px;
+    height: 50px;
+    margin: 0 auto;
+    margin-bottom: 10px;
+}
+
+bt {
+    font-family: 'Roboto Slab', serif;
+    font-size: 20px;
+    font-weight: 500;
+    color: #000000;
+}
+
+ht {
+    font-family: 'Roboto Slab', serif;
+    font-size: 30px;
+    font-weight: 500;
+    color: #000000;
+}
+
+/* Home Screen Elements */
+
+#mainlogo {
+    display: flex;
+    justify-content: center;
+    width: 650px;
+    margin: auto;
+    filter: drop-shadow(8px 8px 15px #cecdcd);
+    margin-top: 10%;
+    animation: pop 5s ease-in-out infinite;
+    margin-bottom: 75px;
+}
+
+@keyframes pop {
+    0% {
+        transform: scale(1.05);
+    }
+    50% {
+        transform: scale(1);
+    }
+    100% {
+        transform: scale(1.05);
+    }
+}
+
+.homebutton {
+    font-family: Roboto Slab;
+    outline: 8px double #F9F9F9;
+    background-color: #6c1e1e;
+    color: #ffffff;
+    font-size: 20px;
+    padding: 10px;
+    border-radius: 20px;
+    text-align: center;
+    margin-left: 40%;
+    margin-right: 40%;
+    margin-bottom: 30px;
+    filter: drop-shadow(4px 4px 10px #cecdcd);
+    animation: pop_slight 5s ease-in-out infinite;
+}
+
+.homebutton:hover {
+    /* background-color: #ffffff;
+    color: #6c1e1e; */
+    cursor: pointer;
+    animation: whiten 20s 1;
+    
+}
+
+@keyframes pop_slight {
+    0% {
+        transform: scale(1.025);
+    }
+    50% {
+        transform: scale(1);
+    }
+    100% {
+        transform: scale(1.025);
+    }
+}
+
+@keyframes whiten {
+    0% {
+        background-color: #6c1e1e;
+    }
+    2.5% {
+        background-color: #ffffff;
+        color: #6c1e1e;
+    }
+    100% {
+        background-color: #6c1e1e;
+        color: #ffffff;
+    }
+}
+
+/* Admin Panel */
+
+@keyframes pop_out {
+    0% {
+        visibility: hidden;
+    }
+    25% {
+        visibility: hidden;
+        transform: translateY(50px);
+    }
+    100% {
+        visibility: visible;
+        transform: translateY(0px);
+    }
+}
+
+@keyframes go_out {
+    0% {
+        visibility: visible;
+    }
+    100% {
+        /* transform: translateY(-500px); */
+        bottom: -200px;
+        visibility:hidden;
+
+    }
+}
+
+#adminpanel{
+    background-color: #6c1e1e;
+    color: #ffffff;
+    bottom: 0;
+    height: 60px;
+    width: 100%;
+    position: fixed;
+    overflow: hidden;
+    padding: 15px;
+    /* border-radius: 20px; */
+
+    filter: drop-shadow(4px 4px 10px #cecdcd);
+    font-family: Roboto Slab;
+    outline: 8px double #F9F9F9;
+    display: block;
+    visibility: hidden;
+    /* animation: pop_out 5s 1; */
+}
+
+.admin_button {
+    height: 50px;
+    width: 50px;
+    margin-top: 5px;
+    margin-left: 50px;
+    /* margin-right: 100px; */
+    filter: drop-shadow(1px 1px 3px #cecdcd);
+}
+
+.admin_button:hover {
+    cursor: pointer;
+    animation: pop 2s ease-in-out infinite;
+}
+
+panelbig {
+    filter: drop-shadow(5px 5px 10px #0f0909);
+    font-size: 45px;
+    font-weight: 500;
+    color: #ffffff;
+    vertical-align: top;
+    margin-right: 25px;
+}
+
+paneltext {
+    margin-left: 10px;
+    color: rgb(255, 255, 255);
+    font-size: 15px;
+    filter: drop-shadow(1px 1px 3px #cecdcd);
+    text-align: center;
+}
+
+/* In Development Waiver */
+#indevelopmentwaiver {
+    font-family: Roboto Slab;
+    outline: 2px maroon solid;
+    background-color: #cecdcd;
+    color: maroon;
+    font-size: 15px;
+    margin: auto;
+    margin-top: 80px;
+    padding: 30px;
+    width: 50%;
+}
+
+/* QueryTest Styles */
+
+.querycontainer {
+    /* Make the input and textarea fields centered in the middle of the page.
+    Make sure they have a grey background with the Roboto Slab text
+    Make sure the width of the input field and the height are of decent size
+    Center the div's elements in the middle of the page */
+    
+    /* Center the div's elements in the middle of the page */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+
+    height: 100%;
+    width: 30%;
+    background-color: #cecdcd;
+    padding: 20px;
+    border-radius: 20px;
+    filter: drop-shadow(4px 4px 10px #cecdcd);
+    outline: 8px double #F9F9F9;
+    margin-bottom: 40px;
+}
+
+#queryinput {
+    /* Contained in querycontainer class */
+    /* Make sure the input box has the Roboto Slab font, is of decent size, long enough for a query
+    to be input */
+    font-family: Roboto Slab;
+    font-size: 15px;
+    width: 100%;
+    height: 50px;
+    border-radius: 20px;
+    padding: 10px;
+    outline: 8px double #F9F9F9;
+    filter: drop-shadow(4px 4px 10px #cecdcd);
+
+    margin-right: 30px;
+}
+
+#queryresults {
+    /* Contained in querycontainer class */
+    /* Make sure the text area box has the Roboto Slab font, is of decent size, long enough for a query
+    result to be displayed*/
+    font-family: Roboto Slab;
+    font-size: 18px;
+    width: 100%;
+    height: 100px;
+    border-radius: 20px;
+    padding: 10px;
+    outline: 8px double #F9F9F9;
+    filter: drop-shadow(4px 4px 10px #cecdcd);
+
+}

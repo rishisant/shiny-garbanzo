@@ -9,6 +9,7 @@ import './AuthenticateStyle.css';
 // import {raise_admin_bar} from './HomeFunctions';
 import {raise_admin_bar} from './HomeFunctions';
 import { isValidServer } from './AuthentScript';
+import { print_All_Vals, products, ingredients, prices } from './Home';
 
 const AuthenticateS = () => {
     const navigate = useNavigate();
@@ -22,6 +23,7 @@ const AuthenticateS = () => {
             </div>
             <div id="authspacer"></div>
             <div class="homebutton" id="check_auth" onClick={isValidServer}>Authenticate</div>
+            <div class="homebutton" id="admin_panel" onClick={print_All_Vals}>Print all vals Console</div>
             <div class="homebutton" id="admin_panel" onClick={raise_admin_bar}>Admin Panel</div>
 
 
