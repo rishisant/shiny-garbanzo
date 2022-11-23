@@ -10,9 +10,13 @@ import InDevelopment from "./InDevelopment";
 import AuthenticateM from "./AuthenticateM";
 import AuthenticateS from "./AuthenticateS";
 import ViewOrders from "./ViewOrders";
+<<<<<<< HEAD
 import CreateOrder from "./CreateOrder";
 import ContactManager from "./ContactManager";
 import Test_Click from "./Test_Click";
+=======
+import GoogleMaps from "./GoogleMaps";
+>>>>>>> 75918dfa6a8e75d89311ea598c660bd01e561820
 
 function App() {
   return (
@@ -29,9 +33,13 @@ function App() {
         <Route exact path="/AuthenticateM" element = {<AuthenticateM/>}/>
         <Route exact path="/AuthenticateS" element = {<AuthenticateS/>}/>
         <Route exact path="/ViewOrders" element = {<ViewOrders/>}/>
+<<<<<<< HEAD
         <Route exact path="/CreateOrder" element = {<CreateOrder/>}/>
         <Route exact path="/ContactManager" element = {<ContactManager/>}/>
         <Route exact path="/Test_Click" element = {<Test_Click/>}/>
+=======
+        <Route exact path="/GoogleMaps" element = {<GoogleMaps/>}/>
+>>>>>>> 75918dfa6a8e75d89311ea598c660bd01e561820
       </Routes>
     </BrowserRouter>
     </>

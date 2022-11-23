@@ -86,6 +86,9 @@ const Home = () => {
                 <paneltext>SERVER</paneltext>
                 <img class="admin_button" id="serverlogo" src={require('./components/img/query_transparent.png')} onClick={() => navigate('/QueryTest')} alt="Query Logo"></img>
                 <paneltext>QUERY</paneltext>
+
+                <img class="admin_button" id="serverlogo" src={require('./components/img/googlemaps.png')} onClick={() => navigate('/GoogleMaps')} alt="Map Logo"></img>
+                <paneltext>Locations</paneltext>
                 {/* <img class="admin_button" id="reportslogo" src={require('./components/img/reports_transparent.png')}></img> */}
             </div>
         </div>
