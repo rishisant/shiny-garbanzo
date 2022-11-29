@@ -256,3 +256,27 @@ paneltext {
     filter: drop-shadow(4px 4px 10px #cecdcd);
 
 }
+
+.maptext {
+    /*center text, make sure it is the Roboto Slab font, make sure it is of decent size*/
+    font-family: Roboto Slab;
+    font-size: 20px;
+    text-align: center;
+    color:#4d0e0e;
+    /* outline: 8px double #F9F9F9; */
+    filter: drop-shadow(4px 4px 10px #cecdcd);
+
+}
+
+.mapcontainer {
+    /*center all maps*/
+    
+    margin: 0 auto;
+    margin-bottom: 600px;
+
+}
+
+#map3 {
+    /* code for centering a <Map> element*/
+    margin-bottom: 100px;
+}

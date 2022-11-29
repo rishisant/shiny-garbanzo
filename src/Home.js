@@ -88,7 +88,7 @@ const Home = () => {
                 <paneltext>QUERY</paneltext>
 
                 <img class="admin_button" id="serverlogo" src={require('./components/img/googlemaps.png')} onClick={() => navigate('/GoogleMaps')} alt="Map Logo"></img>
-                <paneltext>Locations</paneltext>
+                <paneltext>LOCATIONS</paneltext>
                 {/* <img class="admin_button" id="reportslogo" src={require('./components/img/reports_transparent.png')}></img> */}
             </div>
         </div>

@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import { Map, GoogleApiWrapper, InfoWindow, Marker } from "google-maps-react";
 import {raise_admin_bar} from './HomeFunctions';
+import './AltStyles.css';
 import {useNavigate} from 'react-router-dom';
 
 const mapStyles = {
@@ -18,6 +19,7 @@ const mapSectionStyles = {
 
 
 export class MapContainer extends Component {
+  
   state = {
     showingInfoWindow: false,
     activeMarker: {},
@@ -43,13 +45,15 @@ export class MapContainer extends Component {
   
 
   render() {
-    const navigate = useNavigate();
+    // const navigate = useNavigate();
+
     return (
+      
       <div>
-        <h1>Locations (Please Click on Marker for Address)</h1>
-        <div style={mapSectionStyles}>
-          <h2>Underground Sbisa</h2>
-          <Map
+        <h1 className="maptext">Locations (Please Click on Marker for Address)</h1>
+        <div className="mapcontainer">
+          <h2 className="maptext">Underground Sbisa</h2>
+          <Map id="map"
             google={this.props.google}
             zoom={16}
             style={mapStyles}
@@ -76,9 +80,9 @@ export class MapContainer extends Component {
           </Map>
         </div>
 
-        <div style={mapSectionStyles}>
-          <h2>Polo Road</h2>
-          <Map
+        <div className="mapcontainer">
+          <h2 className="maptext">Polo Road</h2>
+          <Map id="map"
             google={this.props.google}
             zoom={16}
             style={mapStyles}
@@ -104,9 +108,9 @@ export class MapContainer extends Component {
             </InfoWindow>
           </Map>
         </div>
-        <div style={mapSectionStyles}>
-          <h2>West Campus</h2>
-          <Map
+        <div className="mapcontainer">
+          <h2 className="maptext">West Campus</h2>
+          <Map id="map3"
             google={this.props.google}
             zoom={16}
             style={mapStyles}
@@ -137,7 +141,7 @@ export class MapContainer extends Component {
             {/* <p class="backtest">;{this.state.apiResponse}</p> */}
             <div id="adminpanel">
                 <panelbig>ADMIN PANEL</panelbig>
-                <img class="admin_button" id="serverlogo" src={require('./components/img/home_transparent.png')} onClick={() => navigate('/')} alt="Home Logo"></img>
+                <img class="admin_button" id="serverlogo" src={require('./components/img/home_transparent.png')} onClick={() => window.location.href = "/"} alt="Home Logo"></img>
                 <paneltext>RETURN HOME</paneltext>
                 {/* <img class="admin_button" id="reportslogo" src={require('./components/img/reports_transparent.png')}></img> */}
             </div>
