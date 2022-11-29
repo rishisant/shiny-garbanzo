@@ -1,0 +1,21 @@
+{
+  "files": {
+    "main.css": "/static/css/main.0a542b5e.css",
+    "main.js": "/static/js/main.f1e13237.js",
+    "static/js/787.15cd0b32.chunk.js": "/static/js/787.15cd0b32.chunk.js",
+    "static/media/subway_photo.png": "/static/media/subway_photo.5fb90bd9321822becfaa.png",
+    "static/media/hss_transparent.png": "/static/media/hss_transparent.6272b88b41cc75893397.png",
+    "static/media/home_transparent.png": "/static/media/home_transparent.e163562ca5dab0b8513a.png",
+    "static/media/query_transparent.png": "/static/media/query_transparent.e102ef44f6535594b30b.png",
+    "static/media/manager_transparent.png": "/static/media/manager_transparent.bc308253e6ad6670d3dc.png",
+    "static/media/googlemaps.png": "/static/media/googlemaps.566bd6e4ef8b45bd1be9.png",
+    "index.html": "/index.html",
+    "main.0a542b5e.css.map": "/static/css/main.0a542b5e.css.map",
+    "main.f1e13237.js.map": "/static/js/main.f1e13237.js.map",
+    "787.15cd0b32.chunk.js.map": "/static/js/787.15cd0b32.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.0a542b5e.css",
+    "static/js/main.f1e13237.js"
+  ]
+}
