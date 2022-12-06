@@ -1,0 +1,32 @@
+/*
+for the accessibility stylesheet
+*/
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300&display=swap');
+
+.accesscontainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 35px;
+}
+.accessbutton {
+    cursor: pointer;
+    background-color: #e7e7e7;
+    color: maroon;
+    font-family: Roboto Slab, serif;
+    font-size: 25px;
+    margin: 0 auto;
+    margin-bottom: 15px;
+    padding: 10px;
+    border-radius: 20px;
+    text-align: center;
+    width: 10%;
+    outline: 2px maroon solid;
+    font-weight: bold;
+}
+
+.accessbutton:hover {
+    background-color: #cecdcd;
+}

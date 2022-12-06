@@ -29,3 +29,19 @@ export function raise_admin_bar() {
 //     console.log("hello world\n");
 // }
 // raise_admin_bar()
+
+async function translate(text, targetLanguage) {
+    const request = {
+        method: 'POST',
+        headers: {'Content-Type': 'application/json'},
+        body: JSON.stringify({text: text, targetLanguage: targetLanguage})
+    }
+
+    const response = await fetch('https://hssbackend.herokuapp.com/translate', request);
+    const data = await response.json();
+    return data;
+}
+
+export {
+    translate
+}

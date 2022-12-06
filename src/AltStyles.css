@@ -272,11 +272,8 @@ paneltext {
     /*center all maps*/
     
     margin: 0 auto;
-    margin-bottom: 600px;
-
-}
-
-#map3 {
-    /* code for centering a <Map> element*/
+    margin-top: 50px;
     margin-bottom: 100px;
+
 }
+

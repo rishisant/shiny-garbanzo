@@ -16,6 +16,32 @@ const mapSectionStyles = {
   width: "1050px",
 };
 
+const mapContainerStyles = {
+  position: "relative",
+  display: "run-in",
+  height: "600px",
+  width: "1050px",
+  marginLeft: "auto",
+  marginRight: "auto",
+};
+
+const mapTitleStyles = {
+  // center the textbox and make the box bigger, font size= 25px
+  fontSize: "25px",
+  fontFamily: "Roboto Slab",
+  textAlign: "center",
+  backgroundColor: "white",
+  color: "black",
+  border: "1px solid black",
+  borderRadius: "20px",
+  padding: "5px",
+  margin: "5px",
+  marginTop: "20px",
+  marginBottom: "20px",
+  width: "30%",
+  marginLeft: "auto",
+  marginRight: "auto",
+}
 
 
 export class MapContainer extends Component {
@@ -50,9 +76,15 @@ export class MapContainer extends Component {
     return (
       
       <div>
-        <h1 className="maptext">Locations (Please Click on Marker for Address)</h1>
-        <div className="mapcontainer">
-          <h2 className="maptext">Underground Sbisa</h2>
+
+        <img id="mainlogo3" src={require('./components/img/hss_transparent.png')} alt="Logo"></img>
+
+        <div className="textbut1">
+                The map below shows the locations of all of our stores. Click on a marker to see the address and phone number of the store.
+        </div>
+
+        <div className="mapcontainer" style={mapContainerStyles}>
+          <h2 style={mapTitleStyles}>Underground Sbisa</h2>
           <Map id="map"
             google={this.props.google}
             zoom={16}
@@ -80,8 +112,8 @@ export class MapContainer extends Component {
           </Map>
         </div>
 
-        <div className="mapcontainer">
-          <h2 className="maptext">Polo Road</h2>
+        <div className="mapcontainer" style={mapContainerStyles}>
+        <h2 style={mapTitleStyles}>Polo Road</h2>
           <Map id="map"
             google={this.props.google}
             zoom={16}
@@ -108,8 +140,9 @@ export class MapContainer extends Component {
             </InfoWindow>
           </Map>
         </div>
-        <div className="mapcontainer">
-          <h2 className="maptext">West Campus</h2>
+
+        <div className="mapcontainer" style={mapContainerStyles}>
+        <h2 style={mapTitleStyles}>West Campus</h2>
           <Map id="map3"
             google={this.props.google}
             zoom={16}
@@ -136,7 +169,13 @@ export class MapContainer extends Component {
             </InfoWindow>
           </Map>
         </div>
+
+        
+
         <div class="homebutton" id="admin_panel" onClick={raise_admin_bar}>Admin Panel</div>
+
+        <div id="spacer" style={{marginBottom: "100px", visibility:'hidden'}}>asdas</div>
+        
             <div class="textbox" id="admin_textbox">Text Box</div>
             {/* <p class="backtest">;{this.state.apiResponse}</p> */}
             <div id="adminpanel">
