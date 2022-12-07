@@ -504,26 +504,28 @@ const EditProducts = () => {
             if(menuLoaded == false){
                 //display text boxes and buttons for menu table
                 setMenuBut([<div>
-                    <div className="tablebuttons" id="editAndDeleteProduct">
-                        <input id="product_id" type="text"  placeholder={translatedTextList[28]}>{}</input>
-                        <input id="editname" placeholder={translatedTextList[24]} size="25">{}</input>
-                        <input id="editcategory" placeholder={translatedTextList[25]} size="25">{}</input>
-                        <input id="editprice" placeholder={translatedTextList[23]} size="25">{}</input>
-                        <input id="editingredients" placeholder={translatedTextList[26]} size="25">{}</input>
-                        <button id="editmenu" onClick={putProduct}>{translatedTextList[29]}</button>
-                        <button id="addmenu" onClick={deleteProduct}>{translatedTextList[30]}</button>
-                    
+                    <div style={{textAlign: 'center'}} className="tablebuttons" id="editAndDeleteProduct">
+                        <input style={{fontFamily: 'Roboto Slab'}} id="product_id" type="text"  placeholder={translatedTextList[28]}>{}</input>
+                        <input style={{fontFamily: 'Roboto Slab'}} id="editname" placeholder={translatedTextList[24]} size="25">{}</input>
+                        <input style={{fontFamily: 'Roboto Slab'}} id="editcategory" placeholder={translatedTextList[25]} size="25">{}</input>
+                        <input style={{fontFamily: 'Roboto Slab'}} id="editprice" placeholder={translatedTextList[23]} size="25">{}</input>
+                        <input style={{fontFamily: 'Roboto Slab'}} id="editingredients" placeholder={translatedTextList[26]} size="25">{}</input>
+                        <button style={{fontFamily: 'Roboto Slab'}} id="editmenu" onClick={putProduct}>{translatedTextList[29]}</button>
+                        <button style={{fontFamily: 'Roboto Slab'}} id="addmenu" onClick={deleteProduct}>{translatedTextList[30]}</button>
                     </div>
-                    <div className="tablebuttons" id="addProduct">
-                        <input id="addproduct_id" placeholder={translatedTextList[33]}>{}</input>
-                        <input id="addname" placeholder={translatedTextList[34]} size="25">{}</input>
-                        <input id="addcategory" placeholder={translatedTextList[40]} size="25">{}</input>
-                        <input id="addprice" placeholder={translatedTextList[39]} size="25">{}</input>
-                        <input id="addingredients" placeholder={translatedTextList[41]} size="25">{}</input>
-                        <input id="addstock" placeholder={translatedTextList[35]} size="25">{}</input>
-                        <button id="addmenu" onClick={postProduct}>{translatedTextList[31]}</button>
+                    <div id="spacer" style={{marginBottom: '20px'}}></div>
 
+                    <div style={{textAlign: 'center'}} className="tablebuttons" id="addProduct">
+                        <input style={{fontFamily: 'Roboto Slab'}} id="addproduct_id" placeholder={translatedTextList[33]}>{}</input>
+                        <input style={{fontFamily: 'Roboto Slab'}} id="addname" placeholder={translatedTextList[34]} size="25">{}</input>
+                        <input style={{fontFamily: 'Roboto Slab'}} id="addcategory" placeholder={translatedTextList[40]} size="25">{}</input>
+                        <input style={{fontFamily: 'Roboto Slab'}} id="addprice" placeholder={translatedTextList[39]} size="25">{}</input>
+                        <input style={{fontFamily: 'Roboto Slab'}} id="addingredients" placeholder={translatedTextList[41]} size="25">{}</input>
+                        <input style={{fontFamily: 'Roboto Slab'}} id="addstock" placeholder={translatedTextList[35]} size="25">{}</input>
+                        <button style={{fontFamily: 'Roboto Slab'}} id="addmenu" onClick={postProduct}>{translatedTextList[31]}</button>
                     </div>
+                    <div id="spacer" style={{marginBottom: '10px'}}></div>
+
                 </div>])
 
                 //remove the inventory table if it is displayed
@@ -551,19 +553,21 @@ const EditProducts = () => {
             if(invLoaded == false){
                 //remove the menu table if it is displayed
                 setInvBut([<div>
-                    <div className="tablebuttons" id="editAndDeleteInv">
-                        <input id="editInv_id" type="text"  placeholder={translatedTextList[38]}>{}</input>
-                        <input id="editInv_name" placeholder={translatedTextList[24]} size="25">{}</input>
-                        <input id="editInv_stock" placeholder={translatedTextList[27]} size="25">{}</input>
-                        <button id="editinv" onClick={putInv}>{translatedTextList[37]}</button>
-                        <button id="deleteinv" onClick={deleteInv}>{translatedTextList[36]}</button>
+                    <div style={{textAlign: 'center'}} className="tablebuttons" id="editAndDeleteInv">
+                        <input style={{fontFamily: 'Roboto Slab'}} id="editInv_id" type="text"  placeholder={translatedTextList[38]}>{}</input>
+                        <input style={{fontFamily: 'Roboto Slab'}} id="editInv_name" placeholder={translatedTextList[24]} size="25">{}</input>
+                        <input style={{fontFamily: 'Roboto Slab'}} id="editInv_stock" placeholder={translatedTextList[27]} size="25">{}</input>
+                        <button style={{fontFamily: 'Roboto Slab'}} id="editinv" onClick={putInv}>{translatedTextList[37]}</button>
+                        <button style={{fontFamily: 'Roboto Slab'}} id="deleteinv" onClick={deleteInv}>{translatedTextList[36]}</button>
                     </div>
-                    <div className="tablebuttons" id="addInventory">
-                        <input id="addInv_id" placeholder={translatedTextList[33]}>{}</input>
-                        <input id="addInv_name" placeholder={translatedTextList[34]} size="25">{}</input>
-                        <input id="addInv_stock" placeholder={translatedTextList[35]} size="25">{}</input>
-                        <button id="addinv" onClick={addInv}>{translatedTextList[32]}</button>
+                    <div id="spacer" style={{marginBottom: '20px'}}></div>
+                    <div style={{textAlign: 'center'}} className="tablebuttons" id="addInventory">
+                        <input style={{fontFamily: 'Roboto Slab'}} id="addInv_id" placeholder={translatedTextList[33]}>{}</input>
+                        <input style={{fontFamily: 'Roboto Slab'}} id="addInv_name" placeholder={translatedTextList[34]} size="25">{}</input>
+                        <input style={{fontFamily: 'Roboto Slab'}} id="addInv_stock" placeholder={translatedTextList[35]} size="25">{}</input>
+                        <button style={{fontFamily: 'Roboto Slab'}} id="addinv" onClick={addInv}>{translatedTextList[32]}</button>
                     </div>
+                    <div id="spacer" style={{marginBottom: '10px'}}></div>
                 </div>])
                 setTable([<table></table>]);
                 setMenuBut([<div></div>]);
