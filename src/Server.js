@@ -117,8 +117,6 @@ function App() {
             <div class="homebutton" id="admin_panel" onClick={raise_admin_bar}>{translatedTextList[3]}</div>
             {/* <p class="backtest">;{this.state.apiResponse}</p> */}
             <div id="adminpanel">
-                <panelbig>{translatedTextList[4]}</panelbig>
-                <img class="admin_button" id="serverlogo" src={require('./components/img/query_transparent.png')} onClick={() => navigate('/QueryTest')} alt="Query Logo"></img>
                 <paneltext>{translatedTextList[5]}</paneltext>
                 <img class="admin_button" id="accesslogo" src={require('./components/img/accessibility_transparent.png')} onClick={() => navigate('/Accessibility')} alt="Accessibility Logo"></img>
                 <paneltext>{translatedTextList[6]}</paneltext>

@@ -15,7 +15,7 @@ const ViewReports = () => {
     console.log('currentLang: ' + currentLang);
     const targetLanguage = currentLang;
     const textList = [
-        "Click on the type of report you would like to view and then click the button to view the report. Excess reports return a list of items that sold less than 10% of their inventory, restock reports return a list of items that need to be restocked, and sales reports return the sales by item from the order history. Once a quantity is entered, press Submit Request to re-render the table.",
+        "Restock reports return a list of items that need to be restocked, and sales reports return the sales by item from the order history. Once a quantity is entered, press Submit Request to re-render the table.",
         "Excess Report",
         "Restock Report",
         "Sales Report",
@@ -234,9 +234,7 @@ const ViewReports = () => {
 
 
                 <select id="reporttype" style={dropdownStyle}>
-                    <option value="excess">{translatedTextList[1]}</option>
                     <option value="restock">{translatedTextList[2]}</option>
-                    <option value="sales">{translatedTextList[3]}</option>
                 </select>
 
                 <div id="spacer" style={{marginBottom: '5px', visibility: 'hidden'}}>ss</div>
@@ -248,6 +246,8 @@ const ViewReports = () => {
                     {restockInput}
                     {orderTable}
                 </div>
+
+                <div id="spacer" style={{marginBottom: '20px', visibility: 'hidden'}}>ss</div>
                 {/* <div id="tablediv">
                     <table className="table_s" > 
                         <thead>

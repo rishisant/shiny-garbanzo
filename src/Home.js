@@ -203,8 +203,6 @@ const Home = () => {
                 <paneltext>{translatedTextList[3]}</paneltext>
                 <img class="admin_button" id="serverlogo" src={require('./components/img/server_transparent.png')} onClick={() => navigate('/AuthenticateS')} alt="Server Logo"></img>
                 <paneltext>{translatedTextList[4]}</paneltext>
-                <img class="admin_button" id="querylogo" src={require('./components/img/query_transparent.png')} onClick={() => navigate('/QueryTest')} alt="Query Logo"></img>
-                <paneltext>{translatedTextList[5]}</paneltext>
                 <img class="admin_button" id="accesslogo" src={require('./components/img/accessibility_transparent.png')} onClick={() => navigate('/Accessibility')} alt="Accessibility Logo"></img>
                 <paneltext>{translatedTextList[6]}</paneltext>
 
